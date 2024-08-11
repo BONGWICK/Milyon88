@@ -1,0 +1,11 @@
+<IfModule mod_expires.c>
+    # Enable expirations
+    ExpiresActive On
+
+    # Default directive
+    ExpiresDefault "access plus 1 month"
+
+    # Caching for specific file types
+    ExpiresByType image/webp "access plus 1 year"
+
+</IfModule>
